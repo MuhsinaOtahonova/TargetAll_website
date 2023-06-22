@@ -299,11 +299,15 @@ input[type=tel]:focus {
 }
 
 .page-title {
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .page-title .block {
   text-align: center;
+  position: relative; /* Pozisyonu görece konuma ayarlayın */
 }
+
+
+
 .page-title .block h1 {
   color: #fff;
   font-weight: 200;
@@ -3000,3 +3004,15 @@ ul.dropdown-menu li {
     font-weight:600
   }
 }
+
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff; /* Navigasyon arka plan rengi */
+}
+
+/* İstenilen diğer CSS kuralları */

@@ -22,16 +22,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Themefisher">
   <meta name="generator" content="Themefisher Airspace Template v1.0">
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+ <!-- Favicon -->
+ <link rel="shortcut icon" type="image/x-icon" href="images/LogoFile/logo7.jpeg" />
 
 
   <!-- bootstrap.min css -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <!-- Ionic Icon Css -->
   <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css">
+ 
   <!-- animate.css -->
   <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <!-- Magnify Popup -->
   <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
   <!-- Slick CSS -->
@@ -39,6 +42,7 @@
   
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style1.css">
 
 </head>
 
@@ -50,7 +54,7 @@
 			<div class="col-lg-12">
 				<nav class="navbar navbar-expand-lg p-0">
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.png" alt="Logo">
+						<img src="images/LogoFile/Logo PNG-01.png" alt="Logo">
 					</a>
 
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,117 +124,136 @@
 		</div>
 	</div>
 </header><!-- header close -->
+
+
 <section class="page-title bg-2">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>Drop Us A Note</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam.</p>
+          <style>
+            #fadeInUp1 {
+              font-weight: bold;
+              font-size: 55px;
+              
+            }
+            .block{
+              margin-top: 100px;
+            }
+            </style>
+          <h1 class="animate__animated animate__backInDown " id="fadeInUp1">Contact Us</h1>
+          <p class="animated fadeInUp">We Would Be Happy To Assist You</p>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- contact form start -->
-<section class="contact-form">
-  <div class="container">
-    <form class="row" id="contact-form">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <div class="form-group">
-            <input name="user_name" type="text" class="form-control" placeholder="Your Name">
-          </div>
-          <div class="form-group">
-            <input name="user_email" type="text" class="form-control" placeholder="Email Address">
-          </div>
-          <div class="form-group">
-            <input name="user_subject" type="text" class="form-control" placeholder="Subject">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <div class="form-group-2">
-            <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
-          </div>
-          <button class="btn btn-default" type="submit">Send Message</button>
-        </div>
-      </div>
-      <div class="error" id="error">Sorry Msg dose not sent</div>
-      <div class="success" id="success">Message Sent</div>
-    </form>
-    <div class="contact-box row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <h2>Stop By For A visit</h2>
-          <ul class="address-block">
-            <li>
-              <i class="ion-ios-location-outline"></i>North Main Street,Brooklyn Australia
-            </li>
-            <li>
-              <i class="ion-ios-email-outline"></i>Email: contact@mail.com
-            </li>
-            <li>
-              <i class="ion-ios-telephone-outline"></i>Phone:+88 01672 506 744
-            </li>
-          </ul>
-          <ul class="social-icons">
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-googleplus-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-linkedin-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-pinterest-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-dribbble-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-twitter-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-facebook-outline"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 mt-5 mt-md-0">
-        <div class="block">
-          <div class="google-map">
-            <div class="map" id="map_canvas" data-latitude="51.5223477" data-longitude="-0.1622023"
-              data-marker="images/marker.png"></div>
+</section> 
+
+
+<style>
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px solid #000;
+    opacity: 0.8;
+  }
+ 
+  
+  input[type=submit] {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    border-radius: 50px; /* Köşesiz yapmak için */
+    font-weight: bold;
+    background-color: rgb(26, 195, 26);
+  }
+  
+  input[type=submit]:hover {
+    background-color:  #201E59;
+  } 
+
+  form{
+    margin-top: 105px;
+  }
+.formContact{
+  max-width: 400px;
+  margin-left: 50px;
+}
+.textContact{
+  margin-top: 250px;
+  max-width: 550px;
+  
+}
+
+</style>
+ 
+  
+ <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form class="formContact animate__animated animate__fadeInLeft ">
+        <div class="form-group">
+          <label for="fname">Name *</label>
+          <div class="input-group">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." class="form-control mr-2">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="form-control">
           </div>
         </div>
-      </div>
+  
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="text" id="phone" name="phone" placeholder="Email" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="text" id="phone" name="phone" placeholder="Your phone number.." class="form-control">
+        </div>
+  
+        <div class="form-group">
+          <label for="subject">Comment or Message *</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px" ></textarea>
+        </div>
+  
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </form>
+    </div>
+    <div class="textContact col-md-6 animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+      <h1 class="mb-5" style="color: black; font-weight: bold;">Call Us, Write Us, <span class="text-primary">Or Knock On Our Door</span></h1>
+      <p>We Would Be Happy To Meet You And Learn All About Your Business
+      </p>
+      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce
+        dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
+      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce
+        dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      </p>
+    </div>
+    
     </div>
   </div>
-</section>
-<!-- footer Start -->
-<footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="footer-manu">
-					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Contact us</a></li>
-						<li><a href="service.html">How it works</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="pricing.html">Pricing</a></li>
-					</ul>
-				</div>
-				<p class="copyright mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by <a
-						href="http://www.themefisher.com">Themefisher</a>. All rights reserved.
-					<br> Get More <a href="https://themefisher.com/free-bootstrap-templates/">Free Bootstrap
-						Templates</a>
-				</p>
-			</div>
-		</div>
-	</div>
-</footer>
+</div>
+
+
+  
+ 
+
+
+
+
 
 <!--Scroll to top-->
 <div id="scroll-to-top" class="scroll-to-top">
@@ -256,6 +279,8 @@
     <script src="plugins/google-map/map.js"></script>
 
     <script src="js/script.js"></script>
+
+    <script src="js/wow/wow.min.js"></script>
 
     </body>
 
