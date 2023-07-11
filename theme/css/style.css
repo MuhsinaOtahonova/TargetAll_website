@@ -2849,7 +2849,7 @@ ul.dropdown-menu li {
   color: black;
   transition: ease .25s;
   opacity: 0.3;
-  padding: 2px;
+  padding: 5px;
 }
 
 .footer-distributed .footer-links a:before {
