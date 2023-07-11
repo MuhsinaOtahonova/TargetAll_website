@@ -711,10 +711,14 @@ header .navbar-default .navbar-nav li a:hover {
 .navigation .navbar .navbar-nav > li > a:hover, .navigation .navbar .navbar-nav > li > a:focus {
   color: #000;
   background: transparent;
+  transform: scale(1.25); /* Yazı büyüklüğünü artırmak için transform kullanın */
+  transition: 0.3s;
 }
 .navigation .navbar .navbar-nav li.active > a {
-  text-decoration: underline;
-  color: #655E7A;
+  
+  color:  #201E59;
+  transform: scale(1.25);
+
 }
 .navigation .navbar .dropdown-menu {
   border-radius: 0;
@@ -2806,130 +2810,159 @@ ul.dropdown-menu li {
 
 
 /*** Footer ***/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
 * {
-  margin: 0;
-  padding: 0;
+  font-family: Roboto;
+}
+
+.footer-distributed {
+  background-color: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-
-
-.footer {
-  margin-top: 200px;
-  position: relative;
   width: 100%;
-  background: #3586ff;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin-top: 120px;
 }
 
-.social-icon,
-.menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
+.footer-distributed .footer-left p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
 }
 
-.social-icon__item,
-.menu__item {
-  list-style: none;
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #201E59;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
 }
 
-.social-icon__link {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
+.footer-distributed p.footer-links a {
   display: inline-block;
-  transition: 0.5s;
-}
-.social-icon__link:hover {
-  transform: translateY(-10px);
-}
-
-.menu__link {
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
+  line-height: 1.8;
   text-decoration: none;
-  opacity: 0.75;
-  font-weight: 300;
+  color: inherit;
+  transition: ease .25s;
 }
 
-.menu__link:hover {
-  opacity: 1;
-}
-
-.footer p {
-  color: #fff;
-  margin: 15px 0 10px 0;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.wave {
-  position: absolute;
-  top: -100px;
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
   left: 0;
-  width: 100%;
-  height: 100px;
-  background: url("https://i.ibb.co/wQZVxxk/wave.png");
-  background-size: 1000px 100px;
+  color: #201E59;
+  display: inline-block;
+  padding-right: 5px;
 }
 
-.wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWaves 4s linear infinite;
+.footer-distributed .footer-links .link-1:before {
+  content: none;
 }
 
-.wave#wave2 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 10px;
-  animation: animate 4s linear infinite !important;
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
 }
 
-.wave#wave3 {
-  z-index: 1000;
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #201E59;
+  border-radius: 50%; 
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-distributed:before,
+.footer-distributed:after {
+  content: "";
+  display: table;
+}
+
+.footer-distributed:after {
+  clear: both;
+}
+
+.footer-distributed .footer-left {
+  float: left;
+}
+
+.footer-distributed .footer-left p {
+  margin: 20px 0 0;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+}
+
+.footer-distributed p.footer-links {
+  margin: 20px 0 0;
+}
+
+.footer-distributed p.footer-links a:before {
+  padding-right: 5px;
+  color: #201E59;
+  font-size: 20px;
+}
+
+.footer-distributed .footer-right a.social-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin-left: 3px;
+  color: #201E59;
+  line-height: 35px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a.social-icon:hover {
+  background-color: #201E59;
+  color: white;
+}
+
+.footer-line {
+  height: 1px;
+  background-color: #000; /* Çizginin rengini istediğiniz renkle değiştirebilirsiniz */
+  margin: 10px 0; /* Çizginin üst ve alt boşluklarını ayarlayabilirsiniz */
   opacity: 0.2;
-  bottom: 15px;
-  animation: animateWaves 3s linear infinite;
+  margin-top: -40px;
 }
 
-.wave#wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  bottom: 20px;
-  animation: animate 3s linear infinite;
+.footer-logo {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
+.logo-description{
+  margin-left: 730px; /* Logodan sonra istediğiniz boşluğu ayarlayabilirsiniz */
 }
 
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-  100% {
-    background-positon-x: 0px;
-  }
+
+.footer-logo img {
+  max-width: 200px; /* İmajın maksimum genişliği ayarlanır */
+  height: auto; /* İmajın oranlarını koruması sağlanır */
 }
+
+
