@@ -1470,6 +1470,81 @@ ul.dropdown-menu li {
 /*# sourceMappingURL=style.css.map */
 
 
+/*** Contact Start ***/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border: none;
+    border-bottom: 1px dotted #000;
+    opacity: 0.8;
+  }
+
+  
+  input[type=submit] {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    border-radius: 50px; /* Köşesiz yapmak için */
+    font-weight: bold;
+    background-color: #4E4AD9;
+   
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color:  green;
+  } 
+
+  form{
+    margin-top: 105px;
+  }
+.formContact{
+  max-width: 400px;
+  margin-left: 50px;
+}
+.textContact{
+  margin-top: 250px;
+  max-width: 550px;
+  
+}
+#form-group1{
+  margin-top: 30px;
+}
+
+.LetsMeet {
+  margin-top: 60px;
+}
+
+.elementor-image-box-content {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.icon {
+  margin-top: 60px;
+}
+
+#fadeInUp1 {
+  font-weight: bold;
+  font-size: 55px;
+  
+}
+.block{
+  margin-top: 100px;
+}
+/*** Contact End ***/
 
 
 /*** Footer Start ***/

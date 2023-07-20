@@ -94,16 +94,6 @@
 		<div class="row">
 		  <div class="col-md-12">
 			<div class="block">
-			  <style>
-				#fadeInUp1 {
-				  font-weight: bold;
-				  font-size: 55px;
-				  
-				}
-				.block {
-  				margin-top: 100px;
-				}
-				</style>
 			  <h1 class="animate__animated animate__backInDown " id="fadeInUp1">Our Services</h1>
 			  <p>......</p>
 			</div>
@@ -223,6 +213,19 @@
 </div>
 <!-- Service2 End -->
 
+
+
+<script>
+	function goToContactPage(event, tabName) {
+	  event.preventDefault();
+	  var message = 'I would like to buy ' + tabName;
+	  var encodedMessage = encodeURIComponent(message);
+	  window.location.href = 'contact.html?message=' + encodedMessage;
+	}
+</script>
+
+
+
  <!-- Pricing Start -->
  <div class="container-xxl py-5">
 	<div class="container py-5">
@@ -244,7 +247,7 @@
 					  <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-					  <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
+					  <a class="btn-slide mt-2" href="contact.html" onclick="goToContactPage(event, 'SEO')"><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
 					</div>
 				  </div>
 				</div>
@@ -262,7 +265,7 @@
 					  <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-					  <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
+					  <a class="btn-slide mt-2" href="contact.html" onclick="goToContactPage(event, 'Content Maketing')"><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
 					</div>
 				  </div>
 				</div>
@@ -280,7 +283,7 @@
 					  <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-					  <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
+					  <a class="btn-slide mt-2" href="contact.html" onclick="goToContactPage(event, 'Web Design')"><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
 					</div>
 				  </div>
 				</div>
@@ -300,7 +303,7 @@
 					  <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-					  <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
+					  <a class="btn-slide mt-2" href="contact.html" onclick="goToContactPage(event, 'SMM')"><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
 					</div>
 				  </div>
 				</div>
@@ -318,7 +321,7 @@
 					  <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-					  <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
+					  <a class="btn-slide mt-2" href="contact.html" onclick="goToContactPage(event, 'Logo Design')"><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
 					</div>
 				  </div>
 				</div>
@@ -336,7 +339,7 @@
 					  <p><i class="fa fa-check text-success me-3"></i>FontAwesome Icons</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Responsive Layout</p>
 					  <p><i class="fa fa-check text-success me-3"></i>Cross-browser Support</p>
-					  <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
+					  <a class="btn-slide mt-2" href="contact.html" onclick="goToContactPage(event, 'Translator')"><i class="fa fa-arrow-right"></i><span>Buy Now</span></a>
 					</div>
 				  </div>
 				</div>
